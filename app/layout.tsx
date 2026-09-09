@@ -2,6 +2,12 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+const siteOrigin = isGitHubPages
+  ? 'https://choijinwon.github.io'
+  : 'https://commerce-ops-platform.abyys9114.chatgpt.site';
+const socialImage = isGitHubPages ? '/commerce-ops-platform/og.png' : '/og.png';
+
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -13,20 +19,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://commerce-ops-platform.abyys9114.chatgpt.site'),
+  metadataBase: new URL(siteOrigin),
   title: 'Commerce Ops — 운영 통합 플랫폼',
   description: '주문, 재고, 배송, 정산을 한곳에서 관리하는 커머스 운영 통합 플랫폼',
   openGraph: {
     title: 'Commerce Ops — 운영 통합 플랫폼',
     description: '주문, 재고, 배송, 정산을 한곳에서 관리하는 커머스 운영 통합 플랫폼',
-    images: [{ url: '/og.png', width: 1734, height: 907, alt: 'Commerce Ops 운영 통합 플랫폼' }],
+    images: [{ url: socialImage, width: 1734, height: 907, alt: 'Commerce Ops 운영 통합 플랫폼' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Commerce Ops — 운영 통합 플랫폼',
     description: '주문, 재고, 배송, 정산을 한곳에서 관리하는 커머스 운영 통합 플랫폼',
-    images: ['/og.png'],
+    images: [socialImage],
   },
 };
 

@@ -2,6 +2,8 @@
 
 주문, 재고, 배송, 정산, 고객 데이터를 하나의 화면에서 관리하는 커머스 운영 통합 플랫폼입니다.
 
+**Live demo:** <https://choijinwon.github.io/commerce-ops-platform/>
+
 단순한 관리자 페이지 클론이 아니라, 여러 판매 채널에서 발생하는 운영 문제를 빠르게 발견하고 처리하는 **실무형 프론트엔드 포트폴리오**를 목표로 만들었습니다.
 
 ![Commerce Ops social preview](./public/og.png)

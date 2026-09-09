@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://commerce-ops-platform.cozy-pixie-2826.chatgpt.site'),
+  metadataBase: new URL('https://commerce-ops-platform.abyys9114.chatgpt.site'),
   title: 'Commerce Ops — 운영 통합 플랫폼',
   description: '주문, 재고, 배송, 정산을 한곳에서 관리하는 커머스 운영 통합 플랫폼',
   openGraph: {
